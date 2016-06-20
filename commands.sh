@@ -13,5 +13,12 @@ file:/home/cloudera/test.tsv
 spark-submit --class "SimpleApp" --master local[4] target/sparkwordcount-0.0.1-SNAPSHOT.jar
 
 # runs spark-submit job with fromClouderaApp.scala
+<<<<<<< HEAD
 # looks like inputfile.txt was taken from local filesystem
 spark-submit --class SparkWordCount --master local[2] --deploy-mode client --executor-memory 1g --name wordcount --conf "spark.app.id=wordcount" ./target/sparkwordcount2-0.0.1-SNAPSHOT.jar inputfile.txt 2
+=======
+spark-submit --class SparkWordCount --master local[2] \ 
+--deploy-mode client --executor-memory 1g --name wordcount \
+--conf "spark.app.id=wordcount" \
+./target/sparkwordcount2-0.0.1-SNAPSHOT.jar inputfile.txt 2
+>>>>>>> 1a6108dbf995d331928c546fce0065e0185ea078
