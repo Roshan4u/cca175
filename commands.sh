@@ -15,3 +15,4 @@ spark-submit --class "SimpleApp" --master local[4] target/sparkwordcount-0.0.1-S
 # runs spark-submit job with fromClouderaApp.scala
 # looks like inputfile.txt was taken from local filesystem
 spark-submit --class SparkWordCount --master local[2] --deploy-mode client --executor-memory 1g --name wordcount --conf "spark.app.id=wordcount" ./target/sparkwordcount2-0.0.1-SNAPSHOT.jar inputfile.txt 2
+ps aux | grep impala | awk '{system(sudo kill )}'

@@ -1,0 +1,31 @@
+{
+  "type" : "record",
+  "name" : "dept_manager",
+  "doc" : "Sqoop import of dept_manager",
+  "fields" : [ {
+    "name" : "dept_no",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "dept_no",
+    "sqlType" : "1"
+  }, {
+    "name" : "emp_no",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "emp_no",
+    "sqlType" : "4"
+  }, {
+    "name" : "from_date",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "from_date",
+    "sqlType" : "91"
+  }, {
+    "name" : "to_date",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "to_date",
+    "sqlType" : "91"
+  } ],
+  "tableName" : "dept_manager"
+}

@@ -1,0 +1,43 @@
+{
+  "type" : "record",
+  "name" : "employees",
+  "doc" : "Sqoop import of employees",
+  "fields" : [ {
+    "name" : "emp_no",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "emp_no",
+    "sqlType" : "4"
+  }, {
+    "name" : "birth_date",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "birth_date",
+    "sqlType" : "91"
+  }, {
+    "name" : "first_name",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "first_name",
+    "sqlType" : "12"
+  }, {
+    "name" : "last_name",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "last_name",
+    "sqlType" : "12"
+  }, {
+    "name" : "gender",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "gender",
+    "sqlType" : "1"
+  }, {
+    "name" : "hire_date",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "hire_date",
+    "sqlType" : "91"
+  } ],
+  "tableName" : "employees"
+}
